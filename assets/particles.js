@@ -5,10 +5,10 @@ particles.forEach(node => {
   let color = node.dataset.color;
   const ctx = node.getContext('2d'),
     clr = hexToRgbA(color),
-    width = 1480,
-    height = 2800;
+    width = window.innerWidth,
+    height = 2750;
   node.width = 1480;
-  node.height = 2800;
+  node.height = 2750;
   ctx.fillStyle = clr;
   let dots = {
     num: number,
